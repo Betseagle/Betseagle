@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding 0;
+    font-family: sans-serif;
+    
+}
+.banner{
+    width: 100%; 
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url(background3.png);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #071f0f;
+    border: 5px solid #0a0a0a;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+    position: relative;
+}
+.logo{
+    width: 500px;
+    cursor: pointer;
+    object-position: 0 0;
+    
+}
+.gembox{
+    display: inline-block;
+    background-color: forestgreen;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    left: 400px;
+    
+}
+.gemorder{
+    display: inline-block;
+}
+.gembox p{
+    color: white;
+}
+.gembox i{
+    color: red;
+    display: inline-block;
+}
+.but{
+    position: relative;
+    right: 50px;
+     width: 70px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 40px 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid #114711;
+    background-color: #e35b32;
+    color: #fff;
+    cursor: pointer;
+    
+}
+.navbar ul li{
+    list-style:none;
+    display:inline-block;
+    margin: 0 20px;
+    position: relative;
+    margin-top: auto;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #114711;
+    padding: 20px 20px;
+    border: 3px solid #0b2e0b;
+    margin-top: 30px;
+   
+}
+.navbar ul li::after{
+    content: '';
+    height: 60px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    transition: 0.2s;
+   
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+    
+  
+}
+.navbar2 {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    
+}
+input[type="search"] {
+    width: 800px;
+    padding: 10px;
+    border: 1px solid forestgreen;
+    font-size: 16px;
+    background-color: #262626;
+    margin-left: 120px;
+    margin-top: -10px;
+    
+}
+.navbar2 ul li{
+    list-style:none;
+    display:inline-block;
+    margin:0px;
+    position: relative;
+    margin-top: 10px;
+    right: 100px;
+    width: 100px;
+    
+   
+}
+.navbar2 li{
+    transform: skewX(-20deg);
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    text-transform: uppercase;
+    background-color: #114711;
+    padding: 10px 10px;
+    border: 3px solid #071c07;
+    z-index: 1;
+    
+    
+}
+.navbar2 ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 50px;
+    left: 50px;
+    z-index: 1;
+    
+   
+}
+.navbar2 ul li::after{
+    content: '';
+    height: 40px;
+    width: 0;
+    background: #0c300c;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.1s;
+    z-index: -1;
+}
+.navbar2 ul li:hover::after{
+    width: 100%;
+    z-index: -1;
+    
+    
+  
+}
+.navbar ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    
+}
+button{
+    width: 70px;
+    padding: 5px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid #114711;
+    background-color: #208520;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+buttom:hover{
+    border: none;
+}
+
+.betbox{
+    background: #000;
+    width 200px;
+    height 200px;
+    display: inline-block;
+    margin-left: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    border-style: solid ;
+    border-color: #042911;
+    border-width: thick;
+}
+.betbox img{
+    max-width: 200px;
+    max-height: 150px;
+    object-fit: contain;
+   
+}
+.betbox h1{
+    font-size: 100%;
+    margin-top: 5px;
+    
+    
+    }
+.rowcontainer{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: -30px;
+    
+    
+}

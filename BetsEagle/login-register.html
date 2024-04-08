@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetsEagle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Loginstyle.css">
+    <script src="https://kit.fontawesome.com/9fd6505ede.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="index.html"><img src="Logo4.png" class="logo"></a>
+        </div>
+    <div class="logincontainer">
+        <div class="form-box">
+            <h1 id="title">Register</h1>
+            <form>
+                <div class="input-group">
+                    
+                     <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="password">
+                    </div>
+                    <div class="input-field" id="repeatpassword">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="repeat password">
+                    </div>
+                    <p id="forgotpassword">Forgot password? <a href="#">Click here</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signinBtn"class="disable"> Sign in</button>
+                    <button type="button" id="registerBtn"> Register</button>
+                </div>
+            </form>
+        </div>
+    </div>     
+            
+        
+            
+        </div>
+    <script>
+        
+    let signupBtn = document.getElementById("registerBtn");
+    let signinBtn = document.getElementById("signinBtn");
+    let nameField = document.getElementById("nameField");
+    let title = document.getElementById("title");
+    let forgotpassword = document.getElementById("forgotpassword");
+       
+    signinBtn.onclick = function(){
+        nameField.style.maxHeight = 0;
+        forgotpassword.style.fontSize = "13px";
+        repeatpassword.style.maxHeight = 0;
+        title.innerHTML = "Sign in";
+        registerBtn.classList.add("disable");
+        signinBtn.classList.remove("disable");
+    } 
+    registerBtn.onclick = function(){
+        nameField.style.maxHeight = "60px";
+        forgotpassword.style.fontSize = "0";
+        repeatpassword.style.maxHeight = "60px";
+        title.innerHTML = "Register";
+        registerBtn.classList.remove("disable");
+        signinBtn.classList.add("disable");
+    } 
+       
+    </script>
+    
+</body>
+</html>
